@@ -12,8 +12,8 @@ import java.util.Arrays;
 
 public class Main {
 
-    private static void draw(TreeViewer viewer) {
-        JFrame frame = new JFrame("Antlr AST");
+    private static void draw(TreeViewer viewer, String name) {
+        JFrame frame = new JFrame(name);
         JPanel panel = new JPanel();
         JScrollPane scrollPane = new JScrollPane(panel);
         viewer.setScale(1.5);
@@ -43,11 +43,11 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         TreeViewer viewer = buildViewer(getFIleName());
-        draw(viewer);
+        draw(viewer, "Tree");
     }
 
-    public static void runFile(String fileName) throws IOException {
+    public static void runFile(String fileName, String name) throws IOException {
         TreeViewer viewer = buildViewer(fileName);
-        draw(viewer);
+        draw(viewer, name);
     }
 }

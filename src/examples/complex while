@@ -1,7 +1,7 @@
 a=1
 i=3
-while (i > 0):
-    if (a):
+while i > 0:
+    if a:
         print("a == True")
     else:
         print("a == False")
