@@ -1,0 +1,9 @@
+a = 0
+if a > 0:
+    print(a)
+else:
+    print(0)
+
+a = 7
+if (a > 0):
+    print(a)
